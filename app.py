@@ -4,14 +4,17 @@ import pandas as pd
 class Ui_MainWindow(object):
 
     def load_csv(self):
+        
+        #os.system("node ")
         df = pd.read_csv("jobs.csv")
         header = df.columns
         self.result_display.setHorizontalHeaderLabels(header)
-        self.result_display.setRowCount(1)
-        #for i, row in df.iterrows():
-            
-        #   for j, col in enumerate(header):
+        self.result_display.setRowCount(0)
 
+        for i, row in df.iterrows():    
+            self.result_display.insertRow(i)
+            for j, col in enumerate(header):
+                self.result_display.setItem(i, j, QtWidgets.QTableWidgetItem(row[col]) )
 
     def setupUi(self, MainWindow):
         
