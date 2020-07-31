@@ -1,11 +1,12 @@
 from PyQt5 import QtCore, QtGui, QtWidgets
 import pandas as pd
+import os
 
 class Ui_MainWindow(object):
 
     def load_csv(self):
         
-        #os.system("node ")
+        os.system(f'node job_data_script.js "{self.job_title.text()}"')
         df = pd.read_csv("jobs.csv")
         header = df.columns
         self.result_display.setHorizontalHeaderLabels(header)
