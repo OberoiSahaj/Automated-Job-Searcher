@@ -16,4 +16,5 @@ It is an app made using Python and JavaScript that scraps jobs for the job title
 > - Open your command prompt in the directory where all these files are present.
 > - python app.py
 
+#### [Video Link](https://drive.google.com/file/d/1dn-rO1pv9so2qv-zh51EsKnbyeNhJe9t/view?usp=sharing)
 #### Now you can easily apply to the jobs you find suitable with the help of its given link.
